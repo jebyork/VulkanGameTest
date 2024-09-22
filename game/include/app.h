@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "../../engine/include/jve_window.h"
+#include "jve_window.h"
 
 namespace jve {
 
