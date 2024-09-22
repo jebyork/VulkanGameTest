@@ -1,0 +1,23 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug/game",
+	"dir-cur-src" : "C:/Users/Josh/CLionProjects/VulkanGame/game",
+	"dir-top-bld" : "C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug",
+	"dir-top-src" : "C:/Users/Josh/CLionProjects/VulkanGame",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\Josh\\CLionProjects\\VulkanGame\\game\\include",
+		"C:\\Users\\Josh\\CLionProjects\\VulkanGame\\engine\\include",
+		"C:\\Users\\Josh\\.vcpkg-clion\\vcpkg\\installed\\x64-windows\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug/game/CMakeFiles/JebGame.dir"
+}
