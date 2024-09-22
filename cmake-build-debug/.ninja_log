@@ -1,0 +1,25 @@
+# ninja log v6
+3	132	7487473654476858	engine/CMakeFiles/engine_lib.dir/src/jve_window.cpp.obj.ddi	23789fec6b05ef25
+3	28	7487474030330010	engine/CMakeFiles/engine_lib.dir/CXX.dd	a1312f4ea442aad6
+3	28	7487474030330010	C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug/engine/CMakeFiles/engine_lib.dir/CXXModules.json	a1312f4ea442aad6
+8	32	7487474030383186	C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug/game/CMakeFiles/VulkanGame.dir/CXXModules.json	ef440a613cbafa4f
+10	171	7487473654541984	game/CMakeFiles/VulkanGame.dir/main.cpp.obj.ddi	cfbe935fb1fd1893
+3	28	7487474030330010	engine/CMakeFiles/engine_lib.dir/src/jve_window.cpp.obj.modmap	a1312f4ea442aad6
+8	32	7487474030383186	game/CMakeFiles/VulkanGame.dir/CXX.dd	ef440a613cbafa4f
+8	32	7487474030383186	game/CMakeFiles/VulkanGame.dir/main.cpp.obj.modmap	ef440a613cbafa4f
+165	792	7487473656091012	engine/CMakeFiles/engine_lib.dir/src/jve_window.cpp.obj	9a048fd419341a83
+793	903	7487473662366431	engine/engine_lib.lib	7bd9a429c9be136c
+200	1003	7487473656438374	game/CMakeFiles/VulkanGame.dir/main.cpp.obj	f856df13878ac334
+3	178	7487476375798817	build.ninja	8fe3462df5f54f2f
+4	32	7487477349924821	engine/CMakeFiles/engine_lib.dir/CXX.dd	a1312f4ea442aad6
+4	32	7487477349924821	C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug/engine/CMakeFiles/engine_lib.dir/CXXModules.json	a1312f4ea442aad6
+4	32	7487477349924821	engine/CMakeFiles/engine_lib.dir/src/jve_window.cpp.obj.modmap	a1312f4ea442aad6
+15	172	7487477350039970	game/CMakeFiles/VulkanGame.dir/src/app.cpp.obj.ddi	60ec9083d900f84a
+9	182	7487477349984876	game/CMakeFiles/VulkanGame.dir/main.cpp.obj.ddi	bf58fb21f0616416
+182	207	7487477351706299	game/CMakeFiles/VulkanGame.dir/CXX.dd	f3ec35b26cf65d91
+182	207	7487477351706299	C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug/game/CMakeFiles/VulkanGame.dir/CXXModules.json	f3ec35b26cf65d91
+182	207	7487477351706299	game/CMakeFiles/VulkanGame.dir/main.cpp.obj.modmap	f3ec35b26cf65d91
+182	207	7487477351706299	game/CMakeFiles/VulkanGame.dir/src/app.cpp.obj.modmap	f3ec35b26cf65d91
+213	661	7487477352011843	game/CMakeFiles/VulkanGame.dir/src/app.cpp.obj	7843a4eb742482aa
+208	849	7487477351961801	game/CMakeFiles/VulkanGame.dir/main.cpp.obj	34dba614462d7f22
+849	2344	7487477358378534	game/VulkanGame.exe	d27a01e138ba1be7

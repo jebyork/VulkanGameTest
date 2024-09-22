@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: VulkanGame
+# Project: VulkanProj
 # Configurations: Debug
 # =============================================================================
 
@@ -40,55 +40,6 @@ include CMakeFiles\rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\
-# =============================================================================
-# Object build statements for EXECUTABLE target VulkanGame
-
-
-#############################################
-# Order-only phony target for VulkanGame
-
-build cmake_object_order_depends_target_VulkanGame: phony || .
-
-build CMakeFiles\VulkanGame.dir\game\main.cpp.obj.ddi: CXX_SCAN__VulkanGame_Debug C$:\Users\Josh\CLionProjects\VulkanGame\game\main.cpp || cmake_object_order_depends_target_VulkanGame
-  DEP_FILE = CMakeFiles\VulkanGame.dir\game\main.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\VulkanGame.dir\game\main.cpp.obj.ddi
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -external:IC:\VulkanSDK\1.3.290.0\Include -external:W0
-  OBJ_FILE = CMakeFiles\VulkanGame.dir\game\main.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\VulkanGame.dir\game\main.cpp.obj.ddi.i
-
-build CMakeFiles\VulkanGame.dir\game\main.cpp.obj: CXX_COMPILER__VulkanGame_scanned_Debug C$:\Users\Josh\CLionProjects\VulkanGame\game\main.cpp | CMakeFiles\VulkanGame.dir\game\main.cpp.obj.modmap || cmake_object_order_depends_target_VulkanGame CMakeFiles\VulkanGame.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\VulkanGame.dir\game\main.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -external:IC:\VulkanSDK\1.3.290.0\Include -external:W0
-  OBJECT_DIR = CMakeFiles\VulkanGame.dir
-  OBJECT_FILE_DIR = CMakeFiles\VulkanGame.dir\game
-  TARGET_COMPILE_PDB = CMakeFiles\VulkanGame.dir\
-  TARGET_PDB = VulkanGame.pdb
-  dyndep = CMakeFiles/VulkanGame.dir/CXX.dd
-
-build CMakeFiles\VulkanGame.dir\CXX.dd | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\CMakeFiles\VulkanGame.dir\CXXModules.json CMakeFiles\VulkanGame.dir\game\main.cpp.obj.modmap: CXX_DYNDEP__VulkanGame_Debug CMakeFiles\VulkanGame.dir\game\main.cpp.obj.ddi | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\CMakeFiles\VulkanGame.dir\CXXDependInfo.json
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target VulkanGame
-
-
-#############################################
-# Link the executable VulkanGame.exe
-
-build VulkanGame.exe: CXX_EXECUTABLE_LINKER__VulkanGame_Debug CMakeFiles\VulkanGame.dir\game\main.cpp.obj | C$:\VulkanSDK\1.3.290.0\Lib\vulkan-1.lib
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = C:\VulkanSDK\1.3.290.0\Lib\vulkan-1.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\VulkanGame.dir
-  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Josh/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug/VulkanGame.exe -installedDir C:/Users/Josh/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\VulkanGame.dir\
-  TARGET_FILE = VulkanGame.exe
-  TARGET_IMPLIB = VulkanGame.lib
-  TARGET_PDB = VulkanGame.pdb
-
 
 #############################################
 # Utility command for edit_cache
@@ -118,53 +69,100 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target JebVulkanEngine
+# Object build statements for STATIC_LIBRARY target VulkanProj
 
 
 #############################################
-# Order-only phony target for JebVulkanEngine
+# Order-only phony target for VulkanProj
 
-build cmake_object_order_depends_target_JebVulkanEngine: phony || .
+build cmake_object_order_depends_target_VulkanProj: phony || .
 
-build engine\CMakeFiles\JebVulkanEngine.dir\src\jve_window.cpp.obj.ddi: CXX_SCAN__JebVulkanEngine_Debug C$:\Users\Josh\CLionProjects\VulkanGame\engine\src\jve_window.cpp || cmake_object_order_depends_target_JebVulkanEngine
-  DEFINES = -DGLFW_DLL
-  DEP_FILE = engine\CMakeFiles\JebVulkanEngine.dir\src\jve_window.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = engine\CMakeFiles\JebVulkanEngine.dir\src\jve_window.cpp.obj.ddi
+build engine\CMakeFiles\VulkanProj.dir\src\jve_window.cpp.obj.ddi: CXX_SCAN__VulkanProj_Debug C$:\Users\Josh\CLionProjects\VulkanGame\engine\src\jve_window.cpp || cmake_object_order_depends_target_VulkanProj
+  DEP_FILE = engine\CMakeFiles\VulkanProj.dir\src\jve_window.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = engine\CMakeFiles\VulkanProj.dir\src\jve_window.cpp.obj.ddi
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\engine\include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
-  OBJ_FILE = engine\CMakeFiles\JebVulkanEngine.dir\src\jve_window.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = engine\CMakeFiles\JebVulkanEngine.dir\src\jve_window.cpp.obj.ddi.i
+  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\engine\include -external:IC:\VulkanSDK\1.3.290.0\Include -external:W0
+  OBJ_FILE = engine\CMakeFiles\VulkanProj.dir\src\jve_window.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = engine\CMakeFiles\VulkanProj.dir\src\jve_window.cpp.obj.ddi.i
 
-build engine\CMakeFiles\JebVulkanEngine.dir\src\jve_window.cpp.obj: CXX_COMPILER__JebVulkanEngine_scanned_Debug C$:\Users\Josh\CLionProjects\VulkanGame\engine\src\jve_window.cpp | engine\CMakeFiles\JebVulkanEngine.dir\src\jve_window.cpp.obj.modmap || cmake_object_order_depends_target_JebVulkanEngine engine\CMakeFiles\JebVulkanEngine.dir\CXX.dd
-  DEFINES = -DGLFW_DLL
-  DYNDEP_MODULE_MAP_FILE = engine\CMakeFiles\JebVulkanEngine.dir\src\jve_window.cpp.obj.modmap
+build engine\CMakeFiles\VulkanProj.dir\src\jve_window.cpp.obj: CXX_COMPILER__VulkanProj_scanned_Debug C$:\Users\Josh\CLionProjects\VulkanGame\engine\src\jve_window.cpp | engine\CMakeFiles\VulkanProj.dir\src\jve_window.cpp.obj.modmap || cmake_object_order_depends_target_VulkanProj engine\CMakeFiles\VulkanProj.dir\CXX.dd
+  DYNDEP_MODULE_MAP_FILE = engine\CMakeFiles\VulkanProj.dir\src\jve_window.cpp.obj.modmap
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\engine\include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
-  OBJECT_DIR = engine\CMakeFiles\JebVulkanEngine.dir
-  OBJECT_FILE_DIR = engine\CMakeFiles\JebVulkanEngine.dir\src
-  TARGET_COMPILE_PDB = engine\CMakeFiles\JebVulkanEngine.dir\JebVulkanEngine.pdb
-  TARGET_PDB = engine\JebVulkanEngine.pdb
-  dyndep = engine/CMakeFiles/JebVulkanEngine.dir/CXX.dd
+  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\engine\include -external:IC:\VulkanSDK\1.3.290.0\Include -external:W0
+  OBJECT_DIR = engine\CMakeFiles\VulkanProj.dir
+  OBJECT_FILE_DIR = engine\CMakeFiles\VulkanProj.dir\src
+  TARGET_COMPILE_PDB = engine\CMakeFiles\VulkanProj.dir\VulkanProj.pdb
+  TARGET_PDB = engine\VulkanProj.pdb
+  dyndep = engine/CMakeFiles/VulkanProj.dir/CXX.dd
 
-build engine\CMakeFiles\JebVulkanEngine.dir\CXX.dd | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\engine\CMakeFiles\JebVulkanEngine.dir\CXXModules.json engine\CMakeFiles\JebVulkanEngine.dir\src\jve_window.cpp.obj.modmap: CXX_DYNDEP__JebVulkanEngine_Debug engine\CMakeFiles\JebVulkanEngine.dir\src\jve_window.cpp.obj.ddi | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\engine\CMakeFiles\JebVulkanEngine.dir\CXXDependInfo.json
+build engine\CMakeFiles\VulkanProj.dir\CXX.dd | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\engine\CMakeFiles\VulkanProj.dir\CXXModules.json engine\CMakeFiles\VulkanProj.dir\src\jve_window.cpp.obj.modmap: CXX_DYNDEP__VulkanProj_Debug engine\CMakeFiles\VulkanProj.dir\src\jve_window.cpp.obj.ddi | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\engine\CMakeFiles\VulkanProj.dir\CXXDependInfo.json
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target JebVulkanEngine
+# Link build statements for STATIC_LIBRARY target VulkanProj
 
 
 #############################################
-# Link the static library engine\JebVulkanEngine.lib
+# Link the static library engine\VulkanProj.lib
 
-build engine\JebVulkanEngine.lib: CXX_STATIC_LIBRARY_LINKER__JebVulkanEngine_Debug engine\CMakeFiles\JebVulkanEngine.dir\src\jve_window.cpp.obj
+build engine\VulkanProj.lib: CXX_STATIC_LIBRARY_LINKER__VulkanProj_Debug engine\CMakeFiles\VulkanProj.dir\src\jve_window.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64
-  OBJECT_DIR = engine\CMakeFiles\JebVulkanEngine.dir
+  OBJECT_DIR = engine\CMakeFiles\VulkanProj.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = engine\CMakeFiles\JebVulkanEngine.dir\JebVulkanEngine.pdb
-  TARGET_FILE = engine\JebVulkanEngine.lib
-  TARGET_PDB = engine\JebVulkanEngine.pdb
+  TARGET_COMPILE_PDB = engine\CMakeFiles\VulkanProj.dir\VulkanProj.pdb
+  TARGET_FILE = engine\VulkanProj.lib
+  TARGET_PDB = engine\VulkanProj.pdb
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target engine_lib
+
+
+#############################################
+# Order-only phony target for engine_lib
+
+build cmake_object_order_depends_target_engine_lib: phony || .
+
+build engine\CMakeFiles\engine_lib.dir\src\jve_window.cpp.obj.ddi: CXX_SCAN__engine_lib_Debug C$:\Users\Josh\CLionProjects\VulkanGame\engine\src\jve_window.cpp || cmake_object_order_depends_target_engine_lib
+  DEFINES = -DGLFW_DLL
+  DEP_FILE = engine\CMakeFiles\engine_lib.dir\src\jve_window.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = engine\CMakeFiles\engine_lib.dir\src\jve_window.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\engine\include -external:IC:\VulkanSDK\1.3.290.0\Include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJ_FILE = engine\CMakeFiles\engine_lib.dir\src\jve_window.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = engine\CMakeFiles\engine_lib.dir\src\jve_window.cpp.obj.ddi.i
+
+build engine\CMakeFiles\engine_lib.dir\src\jve_window.cpp.obj: CXX_COMPILER__engine_lib_scanned_Debug C$:\Users\Josh\CLionProjects\VulkanGame\engine\src\jve_window.cpp | engine\CMakeFiles\engine_lib.dir\src\jve_window.cpp.obj.modmap || cmake_object_order_depends_target_engine_lib engine\CMakeFiles\engine_lib.dir\CXX.dd
+  DEFINES = -DGLFW_DLL
+  DYNDEP_MODULE_MAP_FILE = engine\CMakeFiles\engine_lib.dir\src\jve_window.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\engine\include -external:IC:\VulkanSDK\1.3.290.0\Include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJECT_DIR = engine\CMakeFiles\engine_lib.dir
+  OBJECT_FILE_DIR = engine\CMakeFiles\engine_lib.dir\src
+  TARGET_COMPILE_PDB = engine\CMakeFiles\engine_lib.dir\engine_lib.pdb
+  TARGET_PDB = engine\engine_lib.pdb
+  dyndep = engine/CMakeFiles/engine_lib.dir/CXX.dd
+
+build engine\CMakeFiles\engine_lib.dir\CXX.dd | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\engine\CMakeFiles\engine_lib.dir\CXXModules.json engine\CMakeFiles\engine_lib.dir\src\jve_window.cpp.obj.modmap: CXX_DYNDEP__engine_lib_Debug engine\CMakeFiles\engine_lib.dir\src\jve_window.cpp.obj.ddi | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\engine\CMakeFiles\engine_lib.dir\CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target engine_lib
+
+
+#############################################
+# Link the static library engine\engine_lib.lib
+
+build engine\engine_lib.lib: CXX_STATIC_LIBRARY_LINKER__engine_lib_Debug engine\CMakeFiles\engine_lib.dir\src\jve_window.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = engine\CMakeFiles\engine_lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = engine\CMakeFiles\engine_lib.dir\engine_lib.pdb
+  TARGET_FILE = engine\engine_lib.lib
+  TARGET_PDB = engine\engine_lib.pdb
 
 
 #############################################
@@ -195,75 +193,75 @@ build engine\rebuild_cache: phony engine\CMakeFiles\rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for EXECUTABLE target JebGame
+# Object build statements for EXECUTABLE target VulkanGame
 
 
 #############################################
-# Order-only phony target for JebGame
+# Order-only phony target for VulkanGame
 
-build cmake_object_order_depends_target_JebGame: phony || cmake_object_order_depends_target_JebVulkanEngine
+build cmake_object_order_depends_target_VulkanGame: phony || cmake_object_order_depends_target_engine_lib
 
-build game\CMakeFiles\JebGame.dir\main.cpp.obj.ddi: CXX_SCAN__JebGame_Debug C$:\Users\Josh\CLionProjects\VulkanGame\game\main.cpp || cmake_object_order_depends_target_JebGame
+build game\CMakeFiles\VulkanGame.dir\main.cpp.obj.ddi: CXX_SCAN__VulkanGame_Debug C$:\Users\Josh\CLionProjects\VulkanGame\game\main.cpp || cmake_object_order_depends_target_VulkanGame
   DEFINES = -DGLFW_DLL
-  DEP_FILE = game\CMakeFiles\JebGame.dir\main.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = game\CMakeFiles\JebGame.dir\main.cpp.obj.ddi
+  DEP_FILE = game\CMakeFiles\VulkanGame.dir\main.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = game\CMakeFiles\VulkanGame.dir\main.cpp.obj.ddi
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\game\include -IC:\Users\Josh\CLionProjects\VulkanGame\engine\include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
-  OBJ_FILE = game\CMakeFiles\JebGame.dir\main.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = game\CMakeFiles\JebGame.dir\main.cpp.obj.ddi.i
+  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\game\include -external:IC:\VulkanSDK\1.3.290.0\Include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJ_FILE = game\CMakeFiles\VulkanGame.dir\main.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = game\CMakeFiles\VulkanGame.dir\main.cpp.obj.ddi.i
 
-build game\CMakeFiles\JebGame.dir\main.cpp.obj: CXX_COMPILER__JebGame_scanned_Debug C$:\Users\Josh\CLionProjects\VulkanGame\game\main.cpp | game\CMakeFiles\JebGame.dir\main.cpp.obj.modmap || cmake_object_order_depends_target_JebGame game\CMakeFiles\JebGame.dir\CXX.dd
+build game\CMakeFiles\VulkanGame.dir\main.cpp.obj: CXX_COMPILER__VulkanGame_scanned_Debug C$:\Users\Josh\CLionProjects\VulkanGame\game\main.cpp | game\CMakeFiles\VulkanGame.dir\main.cpp.obj.modmap || cmake_object_order_depends_target_VulkanGame game\CMakeFiles\VulkanGame.dir\CXX.dd
   DEFINES = -DGLFW_DLL
-  DYNDEP_MODULE_MAP_FILE = game\CMakeFiles\JebGame.dir\main.cpp.obj.modmap
+  DYNDEP_MODULE_MAP_FILE = game\CMakeFiles\VulkanGame.dir\main.cpp.obj.modmap
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\game\include -IC:\Users\Josh\CLionProjects\VulkanGame\engine\include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
-  OBJECT_DIR = game\CMakeFiles\JebGame.dir
-  OBJECT_FILE_DIR = game\CMakeFiles\JebGame.dir
-  TARGET_COMPILE_PDB = game\CMakeFiles\JebGame.dir\
-  TARGET_PDB = game\JebGame.pdb
-  dyndep = game/CMakeFiles/JebGame.dir/CXX.dd
+  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\game\include -external:IC:\VulkanSDK\1.3.290.0\Include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJECT_DIR = game\CMakeFiles\VulkanGame.dir
+  OBJECT_FILE_DIR = game\CMakeFiles\VulkanGame.dir
+  TARGET_COMPILE_PDB = game\CMakeFiles\VulkanGame.dir\
+  TARGET_PDB = game\VulkanGame.pdb
+  dyndep = game/CMakeFiles/VulkanGame.dir/CXX.dd
 
-build game\CMakeFiles\JebGame.dir\src\app.cpp.obj.ddi: CXX_SCAN__JebGame_Debug C$:\Users\Josh\CLionProjects\VulkanGame\game\src\app.cpp || cmake_object_order_depends_target_JebGame
+build game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj.ddi: CXX_SCAN__VulkanGame_Debug C$:\Users\Josh\CLionProjects\VulkanGame\game\src\app.cpp || cmake_object_order_depends_target_VulkanGame
   DEFINES = -DGLFW_DLL
-  DEP_FILE = game\CMakeFiles\JebGame.dir\src\app.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = game\CMakeFiles\JebGame.dir\src\app.cpp.obj.ddi
+  DEP_FILE = game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj.ddi
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\game\include -IC:\Users\Josh\CLionProjects\VulkanGame\engine\include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
-  OBJ_FILE = game\CMakeFiles\JebGame.dir\src\app.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = game\CMakeFiles\JebGame.dir\src\app.cpp.obj.ddi.i
+  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\game\include -external:IC:\VulkanSDK\1.3.290.0\Include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJ_FILE = game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj.ddi.i
 
-build game\CMakeFiles\JebGame.dir\src\app.cpp.obj: CXX_COMPILER__JebGame_scanned_Debug C$:\Users\Josh\CLionProjects\VulkanGame\game\src\app.cpp | game\CMakeFiles\JebGame.dir\src\app.cpp.obj.modmap || cmake_object_order_depends_target_JebGame game\CMakeFiles\JebGame.dir\CXX.dd
+build game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj: CXX_COMPILER__VulkanGame_scanned_Debug C$:\Users\Josh\CLionProjects\VulkanGame\game\src\app.cpp | game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj.modmap || cmake_object_order_depends_target_VulkanGame game\CMakeFiles\VulkanGame.dir\CXX.dd
   DEFINES = -DGLFW_DLL
-  DYNDEP_MODULE_MAP_FILE = game\CMakeFiles\JebGame.dir\src\app.cpp.obj.modmap
+  DYNDEP_MODULE_MAP_FILE = game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj.modmap
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\game\include -IC:\Users\Josh\CLionProjects\VulkanGame\engine\include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
-  OBJECT_DIR = game\CMakeFiles\JebGame.dir
-  OBJECT_FILE_DIR = game\CMakeFiles\JebGame.dir\src
-  TARGET_COMPILE_PDB = game\CMakeFiles\JebGame.dir\
-  TARGET_PDB = game\JebGame.pdb
-  dyndep = game/CMakeFiles/JebGame.dir/CXX.dd
+  INCLUDES = -IC:\Users\Josh\CLionProjects\VulkanGame\game\include -external:IC:\VulkanSDK\1.3.290.0\Include -external:IC:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJECT_DIR = game\CMakeFiles\VulkanGame.dir
+  OBJECT_FILE_DIR = game\CMakeFiles\VulkanGame.dir\src
+  TARGET_COMPILE_PDB = game\CMakeFiles\VulkanGame.dir\
+  TARGET_PDB = game\VulkanGame.pdb
+  dyndep = game/CMakeFiles/VulkanGame.dir/CXX.dd
 
-build game\CMakeFiles\JebGame.dir\CXX.dd | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\game\CMakeFiles\JebGame.dir\CXXModules.json game\CMakeFiles\JebGame.dir\main.cpp.obj.modmap game\CMakeFiles\JebGame.dir\src\app.cpp.obj.modmap: CXX_DYNDEP__JebGame_Debug game\CMakeFiles\JebGame.dir\main.cpp.obj.ddi game\CMakeFiles\JebGame.dir\src\app.cpp.obj.ddi | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\game\CMakeFiles\JebGame.dir\CXXDependInfo.json
+build game\CMakeFiles\VulkanGame.dir\CXX.dd | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\game\CMakeFiles\VulkanGame.dir\CXXModules.json game\CMakeFiles\VulkanGame.dir\main.cpp.obj.modmap game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj.modmap: CXX_DYNDEP__VulkanGame_Debug game\CMakeFiles\VulkanGame.dir\main.cpp.obj.ddi game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj.ddi | C$:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\game\CMakeFiles\VulkanGame.dir\CXXDependInfo.json
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target JebGame
+# Link build statements for EXECUTABLE target VulkanGame
 
 
 #############################################
-# Link the executable game\JebGame.exe
+# Link the executable game\VulkanGame.exe
 
-build game\JebGame.exe: CXX_EXECUTABLE_LINKER__JebGame_Debug game\CMakeFiles\JebGame.dir\main.cpp.obj game\CMakeFiles\JebGame.dir\src\app.cpp.obj | engine\JebVulkanEngine.lib C$:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\glfw3dll.lib C$:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\glm.lib || engine\JebVulkanEngine.lib
+build game\VulkanGame.exe: CXX_EXECUTABLE_LINKER__VulkanGame_Debug game\CMakeFiles\VulkanGame.dir\main.cpp.obj game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj | engine\engine_lib.lib C$:\VulkanSDK\1.3.290.0\Lib\vulkan-1.lib C$:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\glfw3dll.lib C$:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\glm.lib || engine\engine_lib.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = engine\JebVulkanEngine.lib  C:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\glfw3dll.lib  C:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\glm.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = game\CMakeFiles\JebGame.dir
-  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\game && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Josh/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug/game/JebGame.exe -installedDir C:/Users/Josh/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
+  LINK_LIBRARIES = engine\engine_lib.lib  C:\VulkanSDK\1.3.290.0\Lib\vulkan-1.lib  C:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\glfw3dll.lib  C:\Users\Josh\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\glm.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = game\CMakeFiles\VulkanGame.dir
+  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Josh\CLionProjects\VulkanGame\cmake-build-debug\game && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Josh/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug/game/VulkanGame.exe -installedDir C:/Users/Josh/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = game\CMakeFiles\JebGame.dir\
-  TARGET_FILE = game\JebGame.exe
-  TARGET_IMPLIB = game\JebGame.lib
-  TARGET_PDB = game\JebGame.pdb
+  TARGET_COMPILE_PDB = game\CMakeFiles\VulkanGame.dir\
+  TARGET_FILE = game\VulkanGame.exe
+  TARGET_IMPLIB = game\VulkanGame.lib
+  TARGET_PDB = game\VulkanGame.pdb
 
 
 #############################################
@@ -291,15 +289,17 @@ build game\rebuild_cache: phony game\CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build JebGame: phony game\JebGame.exe
+build VulkanGame: phony game\VulkanGame.exe
 
-build JebGame.exe: phony game\JebGame.exe
+build VulkanGame.exe: phony game\VulkanGame.exe
 
-build JebVulkanEngine: phony engine\JebVulkanEngine.lib
+build VulkanProj: phony engine\VulkanProj.lib
 
-build JebVulkanEngine.lib: phony engine\JebVulkanEngine.lib
+build VulkanProj.lib: phony engine\VulkanProj.lib
 
-build VulkanGame: phony VulkanGame.exe
+build engine_lib: phony engine\engine_lib.lib
+
+build engine_lib.lib: phony engine\engine_lib.lib
 
 # =============================================================================
 # Folder targets.
@@ -309,21 +309,21 @@ build VulkanGame: phony VulkanGame.exe
 #############################################
 # Folder: C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug
 
-build all: phony VulkanGame.exe engine\all game\all
+build all: phony engine\all game\all
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug/engine
 
-build engine\all: phony engine\JebVulkanEngine.lib
+build engine\all: phony engine\VulkanProj.lib engine\engine_lib.lib
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/Josh/CLionProjects/VulkanGame/cmake-build-debug/game
 
-build game\all: phony game\JebGame.exe
+build game\all: phony game\VulkanGame.exe
 
 # =============================================================================
 # Built-in targets

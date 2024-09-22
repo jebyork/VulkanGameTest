@@ -1,13 +1,7 @@
-﻿cmake_minimum_required(VERSION 3.29)
+﻿set(GAME_SOURCES main.cpp)
 
-project(JebGame CXX)
+include_directories(${CMAKE_SOURCE_DIR}/game/include)
 
-# Ensure that the JebVulkanEngine library is available
-set(ENGINE_LIB JebVulkanEngine)
+add_executable(VulkanGame ${GAME_SOURCES} src/app.cpp main.cpp)
 
-add_executable(${PROJECT_NAME} main.cpp src/app.cpp)
-
-target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/game/include)
-target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/engine/include)
-
-target_link_libraries(${PROJECT_NAME} PUBLIC ${ENGINE_LIB})
+target_link_libraries(VulkanGame engine_lib)

@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "engine\\CMakeFiles\\engine_lib.dir\\src\\jve_window.cpp.obj",
+            "outputs": [
+                "C:\\Users\\Josh\\CLionProjects\\VulkanGame\\cmake-build-debug\\vc140.pdb",
+                "engine\\CMakeFiles\\engine_lib.dir\\src\\jve_window.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

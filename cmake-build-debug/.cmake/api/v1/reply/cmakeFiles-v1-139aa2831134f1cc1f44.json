@@ -150,6 +150,9 @@
 			"path" : "C:/Users/Josh/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
+			"path" : "engine/CMakeLists.txt"
+		},
+		{
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Users/Josh/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/FindVulkan.cmake"
@@ -163,9 +166,6 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Users/Josh/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake"
-		},
-		{
-			"path" : "engine/CMakeLists.txt"
 		},
 		{
 			"isExternal" : true,

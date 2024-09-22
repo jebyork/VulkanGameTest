@@ -3,3 +3,8 @@
 //
 
 #include "app.h"
+
+namespace jve {
+    void App::Run() {}
+
+}

@@ -1,0 +1,5 @@
+ninja_dyndep_version = 1.0
+build game\CMakeFiles\VulkanGame.dir\main.cpp.obj: dyndep
+
+build game\CMakeFiles\VulkanGame.dir\src\app.cpp.obj: dyndep
+
