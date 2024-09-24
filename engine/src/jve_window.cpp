@@ -3,6 +3,8 @@
 //
 #include "jve_window.h"
 
+#include <stdexcept>
+
 namespace jve {
     JveWindow::JveWindow(int width, int height, std::string title) : Width(width), Height(height), WindowTitle(std::move(title)) {
         InitWindow();
@@ -11,6 +13,12 @@ namespace jve {
     JveWindow::~JveWindow() {
         glfwDestroyWindow(Window);
         glfwTerminate();
+    }
+
+    void JveWindow::CreateWindowSurface(VkInstance instance, VkSurfaceKHR*surface) {
+        if (glfwCreateWindowSurface(instance, Window, nullptr, surface) != VK_SUCCESS) {
+            throw std::runtime_error("Failed to create window surface!");
+        }
     }
 
     void JveWindow::InitWindow() {

@@ -12,10 +12,19 @@
 namespace jve {
 
 class JveWindow {
-  public:
+
+public:
     JveWindow(int width, int height, std::string title);
     ~JveWindow();
-  private:
+
+    JveWindow(const JveWindow&) = delete;
+    JveWindow& operator=(const JveWindow&) = delete;
+
+    bool ShouldClose() const { return glfwWindowShouldClose(Window); }
+
+    void CreateWindowSurface(VkInstance instance, VkSurfaceKHR* surface);
+
+private:
 
     void InitWindow();
 

@@ -1,4 +1,6 @@
-﻿set(ENGINE_SOURCES src/jve_window.cpp)
+﻿set(ENGINE_SOURCES src/jve_window.cpp
+        include/jve_device.h
+        src/jve_device.cpp)
 
 include_directories(include)
 

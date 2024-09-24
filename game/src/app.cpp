@@ -5,6 +5,10 @@
 #include "app.h"
 
 namespace jve {
-    void App::Run() {}
+    void App::Run() {
+        while(!Window.ShouldClose()) {
+            glfwPollEvents();
+        }
+    }
 
 }
