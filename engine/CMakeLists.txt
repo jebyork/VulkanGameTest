@@ -1,10 +1,11 @@
-﻿set(ENGINE_SOURCES src/jve_window.cpp
-        include/jve_device.h
-        src/jve_device.cpp)
+﻿cmake_minimum_required(VERSION 3.10)
+project(JebVulkanEngine)
+
+set(ENGINE_SOURCES src/jve_window.cpp
+        src/jve_device.cpp
+        src/jve_pipeline.cpp)
 
 include_directories(include)
-
-add_library(${PROJECT_NAME} src/jve_window.cpp)
 
 find_package(Vulkan REQUIRED)
 target_include_directories(${PROJECT_NAME} PUBLIC ${Vulkan_INCLUDE_DIRS})
