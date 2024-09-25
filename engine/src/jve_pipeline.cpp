@@ -10,9 +10,12 @@
 
 namespace jve {
 
-    JvePipeline::JvePipeline(const std::string &verFilePath, const std::string &fragFilePath) {
-        std::cout << "Initializing JvePipeline with shaders: " << verFilePath << ", " << fragFilePath << std::endl;
-        CreateGraphicsPipeline(verFilePath, fragFilePath);
+    JvePipeline::JvePipeline(JveDevice& device,
+                             const std::string& vertFilePath,
+                             const std::string& fragFilePath,
+                             const PipelineConfigInfo& configInfo) : Device(device) {
+        std::cout << "Initializing JvePipeline with shaders: " << vertFilePath << ", " << fragFilePath << std::endl;
+        CreateGraphicsPipeline(vertFilePath, fragFilePath, configInfo);
     }
 
     std::vector<char> JvePipeline::readFile(const std::string &filePath) {
@@ -32,7 +35,7 @@ namespace jve {
         return buffer;
     }
 
-    void JvePipeline::CreateGraphicsPipeline(const std::string &vertFilePath, const std::string &fragFilePath) {
+    void JvePipeline::CreateGraphicsPipeline(const std::string &vertFilePath, const std::string &fragFilePath, const PipelineConfigInfo& configInfo) {
         try {
             auto vertCode = readFile(vertFilePath);
             auto fragCode = readFile(fragFilePath);
@@ -42,5 +45,26 @@ namespace jve {
         } catch (const std::exception &e) {
             std::cerr << "Error during shader compilation: " << e.what() << std::endl;
         }
+    }
+
+    void JvePipeline::CreateShaderModule(const std::vector<char> &code, VkShaderModule *module) {
+        VkShaderModuleCreateInfo createInfo{};
+        createInfo.sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO;
+        createInfo.codeSize = code.size();
+        createInfo.pCode = reinterpret_cast<const uint32_t*>(code.data());
+
+        if(vkCreateShaderModule(Device.device(), &createInfo, nullptr, module) != VK_SUCCESS) {
+            throw std::runtime_error("Failed to create shader module");
+        }
+
+    }
+
+    PipelineConfigInfo JvePipeline::DefaultPipelineConfigInfo(uint32_t width, uint32_t height) {
+        PipelineConfigInfo configInfo{};
+
+        configInfo.inputAssemblyInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO;
+        configInfo.inputAssemblyInfo.topology = VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST;
+        configInfo.inputAssemblyInfo.primitiveRestartEnable = VK_FALSE;
+        return configInfo;
     }
 }

@@ -18,8 +18,12 @@ class App {
     void Run();
 
     private:
-    JveWindow Window{WIDTH, HEIGHT, "JVE GAME"};
-    JvePipeline Pipeline{"../engine/shaders/simple_shader.vert.spv", "../engine/shaders/simple_shader.frag.spv"};
+        JveWindow Window{WIDTH, HEIGHT, "JVE GAME"};
+        JveDevice Device{Window};
+        JvePipeline Pipeline{Device,
+                         "../engine/shaders/simple_shader.vert.spv",
+                         "../engine/shaders/simple_shader.frag.spv",
+                         JvePipeline::DefaultPipelineConfigInfo(WIDTH, HEIGHT)};
 
-};
+    };
 }
