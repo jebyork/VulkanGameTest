@@ -21,6 +21,7 @@ public:
     JveWindow& operator=(const JveWindow&) = delete;
 
     bool ShouldClose() const { return glfwWindowShouldClose(Window); }
+    VkExtent2D GetExtent() { return {static_cast<uint32_t>(Width), static_cast<uint32_t>(Height)}; }
 
     void CreateWindowSurface(VkInstance instance, VkSurfaceKHR* surface);
 

@@ -1,6 +1,8 @@
 ﻿set(ENGINE_SOURCES src/jve_window.cpp
         src/jve_device.cpp
-        src/jve_pipeline.cpp)
+        src/jve_pipeline.cpp
+        src/jve_swap_chain.cpp
+        )
 
 include_directories(include)
 

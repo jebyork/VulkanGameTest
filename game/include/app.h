@@ -4,26 +4,41 @@
 
 #pragma once
 
-#include <jve_pipeline.h>
-
+#include "jve_pipeline.h"
 #include "jve_window.h"
+#include "jve_swap_chain.h"
+#include "jve_device.h"
+
+#include <memory>
+#include <vector>
 
 namespace jve {
 
-class App {
+    class App {
     public:
-      static constexpr int WIDTH = 800;
-      static constexpr int HEIGHT = 600;
+        static constexpr int WIDTH = 800;
+        static constexpr int HEIGHT = 600;
+
+        App();
+        ~App();
+
+        App(const App&) = delete;
+        App& operator=(const App&) = delete;
 
     void Run();
 
     private:
+
+        void CreatePipelineLayout();
+        void CreatePipeline();
+        void CreateCommandBuffers();
+        void DrawFrame();
+
         JveWindow Window{WIDTH, HEIGHT, "JVE GAME"};
         JveDevice Device{Window};
-        JvePipeline Pipeline{Device,
-                         "../engine/shaders/simple_shader.vert.spv",
-                         "../engine/shaders/simple_shader.frag.spv",
-                         JvePipeline::DefaultPipelineConfigInfo(WIDTH, HEIGHT)};
-
+        JveSwapChain SwapChain{Device, Window.GetExtent()};
+        std::unique_ptr<JvePipeline> Pipeline;
+        VkPipelineLayout PipelineLayout;
+        std::vector<VkCommandBuffer> CommandBuffers;
     };
 }
